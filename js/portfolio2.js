@@ -40,3 +40,15 @@ function typeEffect() {
 }
 
 typeEffect();
+
+//THE CODE BELOW ALLOWS THE HAMBURGER OPEN THE DROPDOWN WHEN CLICKED
+let burgImage = document.getElementById('hamburger_div');
+burgImage.addEventListener('click', function(){
+    dropdown_sec.style.display = 'flex'
+})
+
+// THE CODE BELOW CLOSES THE DROPDOWN WHEN THE 'X' SIGN IS CLICKED
+let closeIcon = document.getElementById('exittt');
+closeIcon.addEventListener('click',function(){
+    dropdown_sec.style.display = 'none';
+})
