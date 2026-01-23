@@ -15,9 +15,9 @@ body{
     width: 100%;
     background-color: black;
     color: white;
-    /* position: sticky;
+    position: sticky;
     top: 0;
-    z-index: 30; */
+    z-index: 30;
 }
 #nav_bar{
     width: 90%;
@@ -35,9 +35,14 @@ body{
     padding-top: 7px;
     cursor: pointer;
 }
-#Benji:hover{
+
+#benji_Header{
+    color: white;
+}
+#benji_Header:hover{
     background-color: #14b8a6;
-    color: #0f172a;
+    color: black;
+    padding: 5px;
 }
 #resume{
     width: 25%;
@@ -103,6 +108,9 @@ body{
 /* SECTION TWO BEGAN HERE */
 #sec1{
     width: 100%;
+    background-color: #191a2d;
+}
+#project_section{
     background-color: #191a2d;
 }
 #art1_sec1{
@@ -211,9 +219,11 @@ width: 49%;
  margin: 1px;
  background-color: #191a2d;   
 }
+
 #projects{
     font-size: 30px;
-    padding-bottom: 20px;
+    padding: 30px 5px;
+    text-align: center;
 }
 .project_header{
     font-size: 20px;
@@ -279,14 +289,13 @@ width: 49%;
     padding-top: 8px;
 }
 #hamburger_div{
-    background-color: #054a42;
     cursor: pointer;
-    margin-right: 3%;
+    
 }
 
 #burger_img{
     width: 35px;
-    display: flex;
+    display: none;
 }
 #exittt{
     width: 100%;
