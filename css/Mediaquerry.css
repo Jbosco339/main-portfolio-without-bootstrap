@@ -167,6 +167,9 @@
     #second_div{
         order: 1;
     }
+    #dropdown_ul{
+        height: 50%;
+    }
     
 }
 /* For iphone 14 proMax */
