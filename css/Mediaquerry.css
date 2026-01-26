@@ -4,7 +4,9 @@
 }
 /* Nest Hub */
 @media screen and (max-width:1024px) {
-    
+    #button22{
+        width: 100px;
+    }
 
 }
 /* Surface Pro 7 */
@@ -75,6 +77,10 @@
     .na_ul_li{
         font-size: 13px;
     }
+    #button22{
+        width: 100px;
+    }
+    
 }
 /* For ipad mini */
 @media screen and (max-width:768px) {
@@ -86,6 +92,12 @@
     }
     #Benjamin33{
         font-size: 50px;
+    }
+    #button22{
+        width: 100px;
+    }
+    #getInTouch_tag{
+        padding-left: 15%;
     }
 }
 /* For surface duo */
@@ -147,7 +159,7 @@
     #typeText{
         line-height: 2;
     }
-    #getInTouch_paragraph{
+    .getInTouch_paragraph{
         font-size: 13px;
         line-height: 1.8;
     }
@@ -170,8 +182,31 @@
     #dropdown_ul{
         height: 50%;
     }
+    #feedBack_div{
+        flex-direction: column;
+        
+    }
+    #footerdiv1{
+        width: 90%;
+    }
+    #information{
+        font-size: 15px;
+    }
+    #art_footer{
+        width: 98%;
+    }
+    #footer_div{
+        width: 100%;
+    }
     
 }
+/* Regular Phones */
+@media screen and (max-width:480px) {
+    #benji_Header{
+        font-size: 15px;
+    }
+}
+
 /* For iphone 14 proMax */
 @media screen and (max-width:430px) {
     #Benji{
@@ -180,7 +215,7 @@
     #Creating_paragraph{
         font-size: 16px;
     }
-    #getInTouch_paragraph{
+    .getInTouch_paragraph{
     font-size: 12px;
     padding: 10px;
    }
@@ -193,17 +228,23 @@
     #typeText{
         font-size: 15px;
     }
-    #getInTouch_paragraph{
+    .getInTouch_paragraph{
     font-size: 15px;
     padding: 10px;
    }
     #hellob{
     padding: 10px;
    }
+   #allRight_reserved{
+    padding: 10px;
+   }
+   
 }
 /* For Samsung Galaxy S20 Ultra */
 @media screen and (max-width:412px) {
-    
+    #benji_Header{
+        font-size: 17px;
+    }
 }
 
 @media screen and (max-width:393px) {
@@ -217,6 +258,9 @@
     #allRight_reserved{
         font-size: 15px;
     }
+    #Benji{
+        /* width: 70%; */
+    }
 }
 /* For iphone X */
 @media screen and (max-width:375px) {
@@ -226,7 +270,7 @@
      #hellob{
     padding: 10px;
    }
-   #getInTouch_paragraph{
+   .getInTouch_paragraph{
     font-size: 12px;
     padding: 10px;
    }
@@ -239,7 +283,7 @@
     #stickysocial{
         right: 1%;
     }
-   #getInTouch_paragraph{
+   .getInTouch_paragraph{
     font-size: 13px;
     padding: 10px;
    }
@@ -259,6 +303,8 @@
     
 }
 @media screen and (max-width:280px) {
-    
+    #benji_Header{
+        font-size: 15px;
+    }
 }
 
