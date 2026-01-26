@@ -198,6 +198,9 @@
     #footer_div{
         width: 100%;
     }
+    #getInTouch_tag{
+        font-size: 15px;
+    }
     
 }
 /* Regular Phones */
@@ -293,6 +296,10 @@
    .project_header{
     font-size: 14px;
    }
+   #getInTouch_tag{
+        font-size: 15px;
+    }
+   
 }
 /* For Galaxy Z fold 5 */
 @media screen and (max-width:344px) {

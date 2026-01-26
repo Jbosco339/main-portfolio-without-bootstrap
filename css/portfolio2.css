@@ -58,6 +58,9 @@ body{
     align-items: center;
     float: right;
 }
+#resume_h2{
+    font-size: 20px;
+}
 #stickysocial{
     position: fixed;
     max-width: 100%;
