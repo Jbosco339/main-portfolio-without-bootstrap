@@ -211,7 +211,12 @@
 }
 /* For iphone 12 Pro */
 @media screen and (max-width:390px) {
-    
+    #benji_Header{
+        font-size: 16px;
+    }
+    #allRight_reserved{
+        font-size: 15px;
+    }
 }
 /* For iphone X */
 @media screen and (max-width:375px) {
