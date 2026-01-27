@@ -229,7 +229,7 @@ width: 49%;
     text-align: center;
 }
 .project_header{
-    font-size: 20px;
+    font-size: 15px;
     color: #9ca3af;
     padding: 10px;
 }
@@ -432,4 +432,12 @@ width: 49%;
 }
 #say_hi{
     color: lightblue;
+}
+#explore{
+    
+    /* padding: 2px; */
+    border-radius: 5px;
+    text-decoration: underline solid gray;
+    font-size: 10px;
+    
 }
