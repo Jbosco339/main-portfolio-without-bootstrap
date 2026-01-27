@@ -411,10 +411,11 @@ width: 49%;
 #button22{
     width: 13rem;
     padding: 5%;
-    background-color: #14b8a6;
+    background-color: #15a896;
     border: none;
     margin: 3px;
     cursor: pointer;
+    border-radius: 5px;
     
 }
 #button22_div{
