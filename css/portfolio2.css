@@ -58,6 +58,9 @@ body{
     align-items: center;
     float: right;
 }
+#resume22:hover{
+    background-color: #1a8579;
+}
 #resume_h2{
     font-size: 20px;
 }
@@ -91,9 +94,9 @@ body{
 }
 
 #hellob{
+    line-height: 1.6;
     color: gray;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding: 1rem 13rem 0rem 0rem;
 }
 
 #download{
@@ -121,24 +124,46 @@ body{
     margin: auto;
     display: flex;
 }
+#avatar_ben{
+    width: 100%;
+    /* height: 680px; */
+}
 #aboutme{
     padding: 20px;
     color: #e5e7eb;
     text-align: center;
 }
 .sec1_divs{
-    width: 48%;
+    width: 68%;
     background-color: #191a2d;
     color: white;
     margin: 1px;
+}
+.sec1_divs2{
+    width: 32%;
+    background-color: #191a2d;
+    margin: 1px;
+}
+#first_div{
+    text-align: center;
+    padding-top: 3%;
 }
 #tech_stackkk{
     padding-top: 25px;
     text-align: center;
     color: lightgrey;
 }
-#avatar_ben{
-    width: 97%;
+#newBen{
+    width: 60%;
+    height: 50%;
+    border-radius: 50%;
+}
+#second_div{
+    width: 48%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #Benjamin33{
     font-size: 70px;
@@ -156,7 +181,7 @@ body{
     color: #6b7280;
     font-weight: 200;
     line-height: 1.7;
-    padding-top: 20px;
+    padding:60px 20px 0px;
 }
 .navicon{
     color: #e5e7eb;

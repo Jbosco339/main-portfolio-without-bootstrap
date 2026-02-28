@@ -104,7 +104,9 @@
 @media screen and (max-width:540px) {
     #burger_img{
         display: flex;
-        
+    }
+    .second_div{
+        width: 100%;
     }
     #na_ul{
         display: none;
@@ -130,9 +132,6 @@
     #aboutme{
         font-size: 17px;
     }
-    #hellob{
-        font-size: 15px;
-    }
     #projects{
         font-size: 25px;
         text-align: center;
@@ -153,8 +152,10 @@
         margin-bottom: 10px;
     }
     #hellob{
+        padding: 1px;
         font-size: 13px;
         line-height: 1.8;
+        font-size: 15px;
     }
     #typeText{
         line-height: 2;
@@ -177,6 +178,7 @@
         order: 2;
     }
     #second_div{
+        width: 100%;
         order: 1;
     }
     #dropdown_ul{
