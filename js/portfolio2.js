@@ -52,3 +52,8 @@ let closeIcon = document.getElementById('exittt');
 closeIcon.addEventListener('click',function(){
     dropdown_sec.style.display = 'none';
 })
+// THE CODE BELOW CLOSES THE DROPDOWN WHEN THE ANCHOR TAGS ARE CLICKED
+let anchorClose = document.getElementById('dropdown_ul');
+anchorClose.addEventListener('click',function(){
+    dropdown_sec.style.display = 'none';
+})
