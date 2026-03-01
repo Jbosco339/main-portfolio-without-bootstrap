@@ -124,10 +124,7 @@ body{
     margin: auto;
     display: flex;
 }
-#avatar_ben{
-    width: 100%;
-    /* height: 680px; */
-}
+
 #aboutme{
     padding: 20px;
     color: #e5e7eb;
@@ -143,6 +140,10 @@ body{
     width: 32%;
     background-color: #191a2d;
     margin: 1px;
+}
+#hero_image{
+    width: 100%;
+    /* height: 680px; */
 }
 #first_div{
     text-align: center;
