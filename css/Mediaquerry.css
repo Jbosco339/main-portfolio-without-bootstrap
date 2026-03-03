@@ -111,6 +111,12 @@
     #na_ul{
         display: none;
     }
+    .stack_holding{
+        flex-direction: column;
+    }
+    .frameworksss{
+        margin: 2px;
+    }
     #resume{
         display: none;
     }
@@ -210,6 +216,12 @@
     #benji_Header{
         font-size: 15px;
     }
+    .stack_holding{
+        flex-direction: column;
+    }
+    .frameworksss{
+        margin: 2px;
+    }
 }
 
 /* For iphone 14 proMax */
@@ -250,6 +262,12 @@
     #benji_Header{
         font-size: 17px;
     }
+    .stack_holding{
+        flex-direction: column;
+    }
+    .frameworksss{
+        margin: 2px;
+    }
 }
 
 @media screen and (max-width:393px) {
@@ -263,9 +281,7 @@
     #allRight_reserved{
         font-size: 15px;
     }
-    #Benji{
-        /* width: 70%; */
-    }
+   
 }
 /* For iphone X */
 @media screen and (max-width:375px) {
@@ -305,7 +321,9 @@
 }
 /* For Galaxy Z fold 5 */
 @media screen and (max-width:344px) {
-    
+    .stack_holding{
+        flex-direction: column;
+    }
 }
 /* For iphone 5/SE */
 @media screen and (max-width:320px) {
