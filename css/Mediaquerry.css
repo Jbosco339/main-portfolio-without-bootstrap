@@ -90,6 +90,30 @@
     .na_ul_li{
         font-size: 13px;
     }
+
+     #art1_sec1{
+        flex-direction: column;
+    }
+    #first_div{
+        order: 2;
+    }
+    #second_div{
+        width: 100%;
+        order: 1;
+    }
+    #first_div{
+        width: 100%;
+    }
+    .projects-wrapper{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .project_wrap_holder{
+        width: 100%;
+        
+    }
+    
     #Benjamin33{
         font-size: 50px;
     }
@@ -98,6 +122,13 @@
     }
     #getInTouch_tag{
         padding-left: 15%;
+    }
+    .projects-wrapper{
+        width: 90%;
+    }
+    
+    #feedBack_div{
+        flex-direction: column;
     }
 }
 /* For surface duo */
@@ -190,6 +221,7 @@
     #dropdown_ul{
         height: 50%;
     }
+
     #feedBack_div{
         flex-direction: column;
         
@@ -281,6 +313,9 @@
     #allRight_reserved{
         font-size: 15px;
     }
+    #stickysocial{
+        right: 2%;
+    }
    
 }
 /* For iphone X */
@@ -324,6 +359,9 @@
     .stack_holding{
         flex-direction: column;
     }
+    #stickysocial{
+        right: 6%;
+    }
 }
 /* For iphone 5/SE */
 @media screen and (max-width:320px) {
@@ -333,5 +371,6 @@
     #benji_Header{
         font-size: 15px;
     }
+    
 }
 
