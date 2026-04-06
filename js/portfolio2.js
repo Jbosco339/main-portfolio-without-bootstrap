@@ -233,21 +233,84 @@ window.addEventListener("scroll", animateProjects);
 window.addEventListener("load", animateProjects);
 
 /* ===== Mouse Glow (Desktop Only) ===== */
-if (window.innerWidth > 768) {
-  card.addEventListener("mousemove", (e) => {
-    const rect = card.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
+// if (window.innerWidth > 768) {
+//   card.addEventListener("mousemove", (e) => {
+//     const rect = card.getBoundingClientRect();
+//     const x = e.clientX - rect.left;
+//     const y = e.clientY - rect.top;
 
-    card.style.background = `
-      radial-gradient(circle at ${x}px ${y}px, rgba(255,255,255,0.08), rgba(255,255,255,0.02))
-    `;
-  });
+//     card.style.background = `
+//       radial-gradient(circle at ${x}px ${y}px, rgba(255,255,255,0.08), rgba(255,255,255,0.02))
+//     `;
+//   });
 
-  card.addEventListener("mouseleave", () => {
-    card.style.background = "rgba(255, 255, 255, 0.04)";
+//   card.addEventListener("mouseleave", () => {
+//     card.style.background = "rgba(255, 255, 255, 0.04)";
+//   });
+// }
+
+
+// hide some projects
+document.addEventListener("DOMContentLoaded", function () {
+  const toggleBtn = document.getElementById("toggleProjects");
+  const extraProjects = document.querySelectorAll(".extra_project");
+  
+  if (!toggleBtn) return;
+
+  console.log("Found " + extraProjects.length + " extra projects");
+
+  toggleBtn.addEventListener("click", function () {
+    const isExpanded = toggleBtn.getAttribute("aria-expanded") === "true";
+    
+    extraProjects.forEach(project => {
+      project.classList.toggle("show");
+    });
+
+    // Update Text and Arrow
+    const btnText = toggleBtn.querySelector(".btn-text");
+    const arrow = toggleBtn.querySelector(".toggle-arrow");
+    
+    if (btnText) btnText.textContent = !isExpanded ? "View Less" : "View More";
+    if (arrow) arrow.classList.toggle("rotate");
+
+    toggleBtn.setAttribute("aria-expanded", !isExpanded);
+
+    // Refresh AOS so the new items animate
+    if (typeof AOS !== "undefined") {
+      setTimeout(() => AOS.refresh(), 100);
+    }
   });
-}
+});
+
+
+
+// SUBMITTING THE CONTACT FORM TO WHATSAPP
+document.getElementById('button22').addEventListener('click', function() {
+  // 1. SET YOUR NUMBER (include country code, e.g., 23480000000)
+  const phoneNumber = "2348067030126"; 
+
+  // 2. Get values using your existing IDs
+  const name = document.getElementById('your_name_text').value;
+  const message = document.getElementById('inputid').value;
+
+  // 3. Validation
+  if (name.trim() === "" || message.trim() === "") {
+    alert("Please fill in both fields before submitting.");
+    return;
+  }
+
+  // 4. Construct the URL
+  const whatsappUrl = `https://wa.me/2348067030126?text=` 
+    + `*New Contact Request*%0A`
+    + `*Name:* ${encodeURIComponent(name)}%0A` 
+    + `*Message:* ${encodeURIComponent(message)}`;
+
+  // 5. Open in a new tab
+  window.open(whatsappUrl, '_blank').focus();
+});
+
+
+
 
 
 
