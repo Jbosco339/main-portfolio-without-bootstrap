@@ -309,6 +309,14 @@ document.getElementById('button22').addEventListener('click', function() {
   window.open(whatsappUrl, '_blank').focus();
 });
 
+// project overlay effect linking
+document.querySelectorAll('.project-card').forEach(card => {
+  card.addEventListener('click', () => {
+    const link = card.querySelector('a').href;
+    window.open(link, '_blank');
+  });
+});
+
 
 
 

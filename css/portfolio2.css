@@ -211,6 +211,7 @@ body {
 }
 #art2_sec2_div {
   width: 100%;
+  margin-left: 10px;
   background-color: #191a2d;
 }
 .sec2_innerdivs {
@@ -249,9 +250,10 @@ body {
   background-color: #191a2d;
 }
 .project_divs {
-  width: 49%;
+  width: 48%;
   margin: 1px;
   background-color: #191a2d;
+  margin: 5px 5px;
 }
 
 #projects {
@@ -836,4 +838,107 @@ body {
 
 .projectDescription {
   font-size: 12px;
+}
+
+/* project overlay effect */
+.project-card {
+  position: relative;
+  width: 300px;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+/* Overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Button */
+.overlay a {
+  text-decoration: none;
+  background: #fff;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.overlay a:hover {
+  background: #ddd;
+}
+
+/* Hover Effects */
+/* Overlay base (always slightly visible) */
+.project-card{
+  width: 48%;
+}
+.project-card img {
+  width: 100%;
+  height: 92%; 
+  object-fit: cover; 
+  display: block;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* lighter so content shows */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 1; /* 👈 always visible (important for mobile) */
+  transition: all 0.3s ease;
+}
+
+/* Button default (faint look) */
+.overlay a {
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.6); /* 👈 faint */
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: 500;
+  opacity: 0.7; /* 👈 slightly faded */
+  transition: all 0.3s ease;
+}
+
+/* Hover effect (desktop) */
+.project-card:hover .overlay {
+  background: rgba(0, 0, 0, 0.7); /* darker on hover */
+}
+
+.project-card:hover .overlay a {
+  background: #fff;
+  opacity: 1;
+  transform: scale(1.05);
+}
+.project-title{
+  display: flex;
+  justify-content: center;
 }
